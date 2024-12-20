@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Pai | Website</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #28313b, #485461);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #2196f3;
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1c1c1c;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #ffab40;
+            margin: 0 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        nav a:hover {
+            color: #ffcc80;
+            transform: scale(1.1);
+        }
+
+        /* Sections */
+        section {
+            display: none;
+            padding: 40px 15px;
+            text-align: center;
+        }
+        section.active {
+            display: block;
+        }
+
+        /* Content Card */
+        .card {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            text-align: left;
+        }
+        .card h2 {
+            margin-bottom: 15px;
+            color: #ffab40;
+            font-size: 1.8rem;
+        }
+        .card div {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+        .card span {
+            font-weight: bold;
+            color: #ffab40;
+            width: 160px;
+            text-align: left;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #bbb;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>Welcome to My Website</header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('resume')">Resume</a>
+        <a href="#" onclick="showSection('biodata')">Bio-data</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="active">
+        <h1>Hi, I'm Pradeep Pai!</h1>
+        <img src="https://i.ibb.co/KwNmsPX/photo.png" alt="Profile" class="profile-img" />
+        <p>Welcome to my personal website. Explore my Resume and Bio-data by clicking on the sections above.</p>
+    </section>
+
+    <section id="resume">
+        <h1>My Resume</h1>
+        <div class="card">
+            <h2>Personal Details</h2>
+            <div><span>Name:</span> <p>Pradeep Pai</p></div>
+            <div><span>College:</span> <p>KLS VDIT Haliyal</p></div>
+            <div><span>Semester:</span> <p>5th Semester</p></div>
+            <div><span>Branch:</span> <p>Computer Science & Engineering</p></div>
+            <div><span>Experience:</span> <p>Fresher</p></div>
+            <div><span>Internship:</span> <p>EduSkills AICTE - Web Development</p></div>
+
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript, React.js, Node.js, MongoDB, Python, SQL, Web Development, Problem-solving</p>
+
+            <h2>Certifications</h2>
+            <ul>
+                <li>Web Development (EduSkills AICTE)</li>
+                <li>Python Programming (Coursera)</li>
+                <li>JavaScript Essentials (Udemy)</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <ul>
+                <li>Personal Portfolio Website (HTML, CSS, JavaScript)</li>
+                <li>E-commerce Web Application (React, Node.js, MongoDB)</li>
+                <li>Data Analysis Project (Python, Pandas, Matplotlib)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="biodata">
+        <h1>My Bio-data</h1>
+        <div class="card">
+            <h2>Personal Information</h2>
+            <div><span>Name:</span> <p>Pradeep Pai</p></div>
+            <div><span>Age:</span> <p>21</p></div>
+            <div><span>Place:</span> <p>Kalaghatgi-581204</p></div>
+            <div><span>Father's Name:</span> <p>Nagesh</p></div>
+            <div><span>Mother's Name:</span> <p>Asha</p></div>
+
+            <h2>Contact Information</h2>
+            <div><span>Email:</span> <p>pradeep.pai@example.com</p></div>
+            <div><span>Phone:</span> <p>+91 1234567890</p></div>
+
+            <h2>Other Information</h2>
+            <div><span>Languages Known:</span> <p>English, Kannada, Hindi</p></div>
+            <div><span>Hobbies:</span> <p>Coding, Playing Chess, Reading Tech Articles, Photography</p></div>
+            <div><span>Address:</span> <p>Kalaghatgi, Dharwad District, Karnataka, India</p></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 Pradeep Pai | All Rights Reserved</footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to display the active section
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => section.classList.remove("active"));
+            document.getElementById(sectionId).classList.add("active");
+        }
+    </script>
+</body>
+</html>
